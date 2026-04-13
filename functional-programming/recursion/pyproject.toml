@@ -1,0 +1,16 @@
+[project]
+name = "recursion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+
+[tool.pyright]
+# Indica a Pyright dónde buscar módulos locales
+include = ["."]
+executionEnvironments = [{ root = "." }]
+extraPaths = ["."]
+
+[tool.ruff]
+# Indica a Ruff cuál es la raíz para resolver imports
+src = ["."]
